@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>My Site</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <section>
+        <form class="login-form" action="Submit" method="post">
+            <fieldset class="login-form-fieldset" form="sign-in-form">
+                <div class="input-list-item">
+                    <label class="sm-label" for="Username">Username:</label>
+                    <input class="input-field" type="text" id="username" name="username" value="" autocorrect="off"
+                        autocapitalize="off" maxlength="50" size="20" autofocus="">
+                </div>
+                <div class="input-list-item">
+                    <label class="sm-label" for="password">Password:</label>
+                    <input class="input-field" aria-describedby="hint" type="password" id="password" name="password"
+                        size="20" autocomplete="off" value="">
+                    <p class="helper-text" id="hint" role=alert>Password must include one capital letter, one lower case
+                        letter,
+                        and at least
+                        one number.</p>
+                </div>
+                <div class="form-submit">
+                    <button class="submit-button" type="submit">LOG IN</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <dialog aria-dialog="true" class="modal" autofocus>
+        <div class="modal-content">
+            <span role=close class="close">&times;</span>
+            <p role=alert id="message">Success!</p>
+        </div>
+    </dialog>
+    <section>
+        <h3>Coded by Karen</h3>
+        <div class="links-bottom">
+            <a href="http://www.karenheyn.com">
+                <div class=portfolio></div>View my portfolio
+            </a>
+            <a href="http://www.github.com/karenheyn">
+                <div class=github></div>View my Github
+            </a>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
